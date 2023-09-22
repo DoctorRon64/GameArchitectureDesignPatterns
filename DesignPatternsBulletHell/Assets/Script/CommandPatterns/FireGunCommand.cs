@@ -40,7 +40,6 @@ public class FireGunCommand : MonoBehaviour, ICommand
     private void deactivateBullet(Bullet _bullet)
     {
         BulletObjectPool.DeactivateItem(_bullet);
-        _bullet.OnBulletCollision -= deactivateBullet;
 	}
 
 	private void FlyBullet(GameObject _bullet)
